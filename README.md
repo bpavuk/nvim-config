@@ -6,6 +6,18 @@ To get Rust working, install Rust with rustup (easy to google) and rust-analyzer
 ```shell
 rustup component add rust-analyzer
 ```
+
+# C (maybe also C++)
+
+To make autocomplete work, make sure you have clangd installed.
+
+# Python
+
+Install [Pyright](https://github.com/microsoft/pyright) and you are good to go.
+```shell
+pip install pyright
+```
+
 # Markdown
 
 To get Markdown rendering working, install C or Zig compiler.
