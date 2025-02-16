@@ -6,6 +6,8 @@ local servers = {
   bashls = {},
   clangd = {},
 
+  slint_lsp = {},
+
   pyright = {
     settings = {
       python = {
@@ -16,6 +18,8 @@ local servers = {
       },
     },
   },
+
+  asm_lsp = {},
 }
 
 for name, opts in pairs(servers) do

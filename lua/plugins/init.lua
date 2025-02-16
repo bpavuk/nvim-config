@@ -35,6 +35,11 @@ return {
     config = function()
       return require("tmux").setup()
     end,
+    lazy = false,
+  },
+
+  {
+    "slint-ui/vim-slint"
   },
 
   {
@@ -51,6 +56,7 @@ return {
         "c",
         "cpp",
         "python",
+        "slint"
       },
     },
   },
