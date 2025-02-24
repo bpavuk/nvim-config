@@ -20,6 +20,7 @@ local servers = {
   },
 
   asm_lsp = {},
+  rnix = {},
 }
 
 for name, opts in pairs(servers) do
