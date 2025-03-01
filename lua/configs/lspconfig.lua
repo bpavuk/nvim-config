@@ -1,8 +1,18 @@
-
 local configs = require "nvchad.configs.lspconfig"
 
 local servers = {
-  html = {},
+  html = {
+    filetypes = { "html", "htmldjango", "superhtml" }
+  },
+  cssls = {},
+  somesass_ls = {
+    root_dir = function(...)
+      return require("lspconfig.util").root_pattern ".git"(...)
+    end,
+    init_options = {
+      workspace = root_dir,
+    },
+  },
   bashls = {},
   clangd = {},
 
@@ -30,4 +40,3 @@ for name, opts in pairs(servers) do
 
   require("lspconfig")[name].setup(opts)
 end
-

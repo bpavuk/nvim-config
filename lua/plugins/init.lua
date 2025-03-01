@@ -39,7 +39,16 @@ return {
   },
 
   {
-    "slint-ui/vim-slint"
+    "slint-ui/vim-slint",
+    config = function()
+      return require("lspconfig").slint_lsp.setup {}
+    end,
+    ft = { "slint" },
+  },
+
+  {
+    "yorik1984/zola.nvim",
+    dependencies = "Glench/Vim-Jinja2-Syntax",
   },
 
   {
@@ -50,13 +59,14 @@ return {
         "lua",
         "vimdoc",
         "html",
+        "htmldjango",
         "css",
         "markdown",
         "markdown_inline",
         "c",
         "cpp",
         "python",
-        "slint"
+        "slint",
       },
     },
   },
