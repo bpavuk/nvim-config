@@ -8,3 +8,4 @@ vim.keymap.set(
   end,
   { silent = true, buffer = bufnr, desc = "Render Markdown" }
 )
+require('cmp').setup.buffer { completion = { autocomplete = false } }
