@@ -14,12 +14,6 @@ return {
   },
 
   {
-    "mrcjkb/rustaceanvim",
-    version = "^5", -- Recommended
-    lazy = false, -- This plugin is already lazy
-  },
-
-  {
     "MeanderingProgrammer/render-markdown.nvim",
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
     dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.icons" }, -- if you use standalone mini plugins
@@ -36,14 +30,6 @@ return {
       return require("tmux").setup()
     end,
     lazy = false,
-  },
-
-  {
-    "slint-ui/vim-slint",
-    config = function()
-      return require("lspconfig").slint_lsp.setup {}
-    end,
-    ft = { "slint" },
   },
 
   {

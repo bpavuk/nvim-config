@@ -18,7 +18,7 @@ vim.keymap.set(
 )
 vim.keymap.set(
   "n",
-  "<leader><F10>", -- yeah I'm IntelliJ sucker. and?
+  "<leader>R",
   function()
     vim.cmd.RustLsp({'run'})
   end,
